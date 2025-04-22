@@ -17,7 +17,7 @@ from .forms import CourseForm
 
 def course_detail(request, course_id):
     course = get_object_or_404(Course, id=course_id)
-    return render(request, 'course_detail.html', {'course': course})
+    return render(request, 'lms/course_detail.html', {'course': course})
 
 # views.py
 
